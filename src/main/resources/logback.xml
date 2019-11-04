@@ -1,0 +1,10 @@
+<configuration>
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+      <includeMdcKeyName>ODM_TRACE_ID</includeMdcKeyName>
+    </encoder>
+  </appender>
+  <root level="info">
+    <appender-ref ref="STDOUT" />
+  </root>
+</configuration>
